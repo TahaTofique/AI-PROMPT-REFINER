@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PromptCraft AI</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>✨ PromptCraft AI</h1>
+
+    <p class="subtitle">
+        Transform simple prompts into powerful AI prompts.
+    </p>
+
+    <input
+        type="password"
+        id="apikey"
+        placeholder="Enter your Gemini API Key">
+
+    <select id="category">
+        <option>General</option>
+        <option>Coding</option>
+        <option>Writing</option>
+        <option>Marketing</option>
+        <option>Image Generation</option>
+    </select>
+
+    <textarea
+        id="prompt"
+        placeholder="Write your prompt here..."></textarea>
+
+    <button id="generate">
+        Improve Prompt
+    </button>
+
+    <div id="loading" class="hidden">
+        Improving Prompt...
+    </div>
+
+    <h2>Improved Prompt</h2>
+
+    <textarea id="output" readonly></textarea>
+
+    <div class="buttons">
+
+        <button id="copy">
+            Copy
+        </button>
+
+        <button id="clear">
+            Clear
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
